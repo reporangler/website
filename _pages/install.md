@@ -3,6 +3,7 @@ title: Installation
 author_staff_member: chris
 layout: docs
 permalink: /docs/install
+weight: 2
 ---
 There are no installation instructions yet. Because there is nothing you can install.
 

@@ -3,6 +3,7 @@ title: Introduction
 author_staff_member: chris
 layout: docs
 permalink: /docs
+weight: 1
 ---
 This project was spawned because I thought it was ridiculous that we have so many pieces of sepatate technology. But 
 nobody apparently thought it was a good idea to combine them together, at least then make it free. There are plenty 

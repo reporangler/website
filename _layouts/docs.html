@@ -7,7 +7,8 @@ layout: default
 <div class="container sidebar-parent">
   <div class="sidebar">
     <ul>
-      {% for item in site.pages %}
+      {% assign pages = site.pages | sort: 'weight' %}
+      {% for item in pages %}
       <li><a href="{{ item.permalink }}">{{ item.title }}</a></li>
       {% endfor %}
     </ul>
