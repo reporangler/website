@@ -1,0 +1,52 @@
+---
+title: Contact
+heading: We'd love to hear from you on GitHub
+description: Lets make the best package manager ever!
+address: "We aren't a company, But we live in Berlin, It's in Germany"
+
+map:
+  latitude: 52.5161075
+  longitude: 13.3991356
+  zoom: 14
+---
+<div class="map" id="map"></div>
+
+<div class="contact-box">
+	<div class="contact-details">
+		<h3>Address</h3>
+		<address>{{ page.address | replace: ", ", ", <br>" }}</address>
+	</div>
+
+  <div class="contact-details">
+    <h3>Issue Tracker</h3>
+    <p><a href="https://github.com/christhomas/reporangler/issues" target="_blank">GitHub</a></p>
+  </div>
+</div>
+
+<script type="text/javascript">
+	window.mapData = {{ page.map | jsonify }};
+
+	function initMap() {
+		var myOptions = {
+			scrollwheel: false,
+			draggable: false,
+			panControl: false,
+			disableDefaultUI: true,
+			zoom: window.mapData.zoom,
+			maxZoom: window.mapData.zoom,
+			minZoom: window.mapData.zoom,
+			center: new google.maps.LatLng(window.mapData.latitude, window.mapData.longitude),
+			mapTypeId: google.maps.MapTypeId.ROADMAP
+		};
+		map = new google.maps.Map(document.getElementById("map"), myOptions);
+		marker = new google.maps.Marker({
+			map: map,
+			position: new google.maps.LatLng(window.mapData.latitude, window.mapData.longitude)
+		});
+
+		google.maps.event.addDomListener(window, "resize", function () {
+			map.setCenter(myOptions.center);
+		});
+	}
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key={{ site.google_maps_javascript_api_key }}&amp;callback=initMap"></script>

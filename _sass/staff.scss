@@ -1,0 +1,50 @@
+.staff {
+  background-color: #ffffff;
+  min-height: 50vh;
+	padding: 0;
+  margin: 0;
+	list-style: none;
+	@extend %flexbox;
+	@include flex-flow(wrap);
+	text-align: center;
+  align-items: center;
+
+	li {
+		padding: 30px 20px;
+		box-sizing: border-box;
+		width: 100%;
+
+		@media #{$tablet} {
+			@include flex(1, 1, 45%);
+		}
+
+		@media #{$desktop} {
+			@include flex(1, 1, 29%);
+		}
+
+	}
+
+	.square-image {
+		width: 200px;
+		height: 200px;
+			img {
+				border-radius: 200px;
+			}
+		}
+
+	.name {
+		font-size: 1.3em;
+		margin-top: 1rem;
+	}
+
+	.position {
+    margin-top: 0.5rem;
+		color: #333;
+	}
+
+  .blurb {
+    color: #888;
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+  }
+}

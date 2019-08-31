@@ -1,0 +1,97 @@
+header {
+  color: #fff;
+  padding: 20px 0;
+  background: $brand-color; /* Old browsers */
+  background: linear-gradient(to bottom, $brand-color 0%, $middle-gradient-color 100%) no-repeat $brand-color;
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    z-index: 1;
+    position: relative;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .company-name {
+    font-size: 2rem;
+    font-weight: 200;
+    line-height: 1.5rem;
+    padding: 0;
+
+    @media #{$mid-point} {
+      padding: 20px 0;
+    }
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    nav {
+      text-transform: uppercase;
+      font-size: .8em;
+
+      .nav-toggle {
+        display: block;
+        font-size: 1.9rem;
+
+        @media #{$mid-point} {
+          display: none;
+        }
+      }
+
+      a {
+        margin: 0 3px;
+        padding: 10px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0);
+        color: rgba(255, 255, 255, .8);
+        transition: .2s ease-in-out;
+        display: none;
+
+        @media #{$mid-point} {
+          display: inline;
+
+        }
+      }
+
+      a:hover {
+        border-bottom: 1px solid rgba(255,255,255,.3);
+        color: #fff;
+      }
+
+      a.active {
+        color: #fff;
+      }
+
+      @media #{$mid-point} {
+        a.highlight {
+          border: 1px #ccc solid;
+          border-radius: 5px;
+
+          &:hover {
+            background: #fff;
+            color: $brand-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+.nav-open header {
+  .container {
+    align-items: baseline;
+
+    nav {
+      text-align: right;
+
+      a {
+        display: block;
+      }
+    }
+  }
+}

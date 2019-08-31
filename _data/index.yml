@@ -1,0 +1,11 @@
+sections:
+  - title: Would you like to host your own <strong>Amazing package repository</strong> on your own infrastructure?
+    text: Repo Rangler, rangles all those repositories under one interface, whilst running each service on it's own container
+    image: dashboard.png
+
+testimonial:
+  - text: I just didn't want to pay $25,000 dollars to store PHP composer packages on S3 ¯\_(ツ)_/¯
+    name: Chris Thomas
+    author: Chris Thomas - CEO of Antimatter Studios.
+    image: https://s.gravatar.com/avatar/77249810e4f87e8a76d5f80f62cb869b?s=400
+

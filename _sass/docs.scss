@@ -1,0 +1,29 @@
+.page {
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    .author {
+      .square-image {
+        width: 5rem;
+        height: 5rem;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .page-content {
+    figure {
+      margin: 0;
+      figcaption {
+        text-align: center;
+        padding-top: 0.5rem;
+        color: #333;
+      }
+    }
+  }
+}

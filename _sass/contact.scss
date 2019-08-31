@@ -1,0 +1,24 @@
+.map {
+  display: flex;
+	width: 100%;
+	margin: 0 auto;
+	height: 400px;
+}
+
+.contact-box {
+	@extend %flexbox;
+	@include flex-flow(wrap);
+	padding: 5rem 0;
+  margin: 0 auto;
+  align-items: flex-start;
+  justify-content: center;
+
+  .contact-details {
+    max-width: 50%;
+    margin: 0 2rem;
+  }
+
+  p{
+    margin: 0;
+  }
+}

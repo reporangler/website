@@ -1,0 +1,28 @@
+<!doctype html>
+
+<html lang="en">
+	{% include header.html %}
+	<body>
+    <header>
+      <div class="container">
+        <div class="company-name"><a href="{{ site.url }}">{{ site.title }}</a></div>
+        {% include navigation.html %}
+      </div>
+		</header>
+
+    <main>
+		  {{ content }}
+    </main>
+
+    {% include footer.html %}
+
+    <script>
+			document.getElementById("open-nav").onclick = function () {
+				document.body.classList.toggle("nav-open");
+				return false;
+			};
+		</script>
+
+    {% include google-analytics.html %}
+  </body>
+</html>

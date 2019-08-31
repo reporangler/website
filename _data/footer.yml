@@ -1,0 +1,12 @@
+- links:
+  - name: Documentation
+    link: /docs
+  - name: About Us
+    link: /about-us
+  - name: Contact
+    link: /contact
+- links:
+  - name: Github
+    link: https://github.com/christhomas/reporangler
+    new_window: true
+    social_icon: Github
