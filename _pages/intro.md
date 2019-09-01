@@ -22,12 +22,12 @@ I plan to build a set of microservices which can accomplish one goal and work to
 project into blocks like this, it's possible to share common components and reduce the amount of duplication.
 
 The services I think I will need to build are:
-- php (satis)
-- node (npm)
-- authentication (for users, token generation)
+- [php](https://github.com/reporangler/php-service){:target="_blank"} (satis)
+- [node](https://github.com/reporangler/npm-service){:target="_blank"} (npm)
+- [authentication](https://github.com/reporangler/auth-service){:target="_blank"} (for users, token generation)
   - requires database for users
   - ldap connection for centrally managed users
-- metadata (for packages)
+- [metadata](https://github.com/reporangler/metadata-service){:target="_blank"} (for packages)
   - requires database for package data
   - some package repositories might not like this, might need databases per repository type
 
