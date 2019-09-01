@@ -16,7 +16,7 @@ repository. Thats a future planned feature
 But right now it's 'working' and I expect a fully data-driven api to be ready quickly based on the time it's taken 
 to build what I've got so far (1 day since I started the work on the api's)
 
-(https://github.com/reporangler/php-service){:target="_blank"}
+[php-service](https://github.com/reporangler/php-service){:target="_blank"}
 
 ## Authentication
 
@@ -27,7 +27,7 @@ attempted to login.
 The idea behind this service is that we can abstract away authentication from the repository. So NPM can use the same 
 database as PHP Composer is using, or perhaps even abstract a second level to a LDAP server. 
 
-(https://github.com/reporangler/auth-service){:target="_blank"}
+[auth-service](https://github.com/reporangler/auth-service){:target="_blank"}
 
 ## Coming soon
 
