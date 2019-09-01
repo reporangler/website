@@ -7,6 +7,6 @@
     link: /contact
 - links:
   - name: Github
-    link: https://github.com/christhomas/reporangler
+    link: https://github.com/reporangler
     new_window: true
     social_icon: Github
