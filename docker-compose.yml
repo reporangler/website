@@ -1,0 +1,15 @@
+networks:
+  repo_rangler_proxy:
+    name: repo_rangler_proxy
+    external: true
+
+services:
+  website:
+    container_name: reporangler_website
+    build:
+      context: .
+      dockerfile: Dockerfile
+    networks:
+      - repo_rangler_proxy
+    environment:
+      - VIRTUAL_HOST=www.reporangler.localhost
